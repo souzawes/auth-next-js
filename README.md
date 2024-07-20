@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+   <img src="https://i.ibb.co/09Lbtbp/banner-next-auth.png" alt="Logo do Projeto" width="550" height="300">
+</p>
 
-## Getting Started
+# Autenticação no NextJS com a biblioteca Auth.js
 
-First, run the development server:
+Este repositório contém um exemplo de implementação de autenticação de usuários em um projeto Next.js utilizando SQLite, Prisma e Auth.js. A autenticação é feita utilizando email e senha. Esse conteúdo é complementar ao post realizado onde o passo a passo é descrito, venha dar uma conferida nesse link.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Visão Geral
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Neste projeto, criamos uma aplicação Next.js que utiliza SQLite para armazenar informações de usuários, Prisma para interagir com o banco de dados e Auth.js para gerenciar a autenticação. A aplicação possui uma página de login e uma página de conteúdo protegido que só pode ser acessada por usuários autenticados.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Requisitos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js 20.x ou superior
+- npm ou yarn
 
-## Learn More
+## Instalação
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/seu-usuario/nextjs-auth-example.git
+   cd nextjs-auth-example
+   ```
+   
+2. Instale as dependências:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
+3. Executando a Aplicação
 
-## Deploy on Vercel
+   As instruções de como construir essa aplicação, estão detalhadas no post citado anteriormente.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Considerações
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Esta implementação serve como uma base para construir sistemas de autenticação mais complexos e seguros. Para mais detalhes sobre as funcionalidades do Auth.js, consulte a documentação oficial.
